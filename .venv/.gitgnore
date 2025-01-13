@@ -1,0 +1,14 @@
+# Ignorar a pasta do ambiente virtual
+venv/
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos gerados pelo editor de código
+*.log
+.idea/
+*.swp
+
+# Ignorar dependências do Node.js, caso existam
+node_modules/
