@@ -6,7 +6,7 @@ mensagem = 'Este curso é bem bom'
 
 # INDEXAÇÃO
 
-print(mensagem[-3:])
+print(mensagem[-3:]) # Slice
 
 # METODOS COMUNS EM STRINGS
 
