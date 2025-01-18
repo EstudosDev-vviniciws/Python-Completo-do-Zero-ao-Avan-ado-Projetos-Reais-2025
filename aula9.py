@@ -323,4 +323,106 @@ print(somar10(2, 4))
 
 # LAMBDA DENTRO DE UMA FUNÇÃO
 
+'''
 
+def somar(x):
+    func2 = lambda x: x + 10
+    return func2(x) * 4
+
+print(somar(2))
+
+'''
+
+# FUNÇÃO MAP EM UMA LISTA
+
+# Muito utilizado com Listas
+# Mapeia uma função para cada elemento interável. (list, tuple, dic etc.)
+
+'''
+
+lista1 = [1, 2, 3, 4]
+
+def multi(x):
+    return x * 2
+
+resultado = map(multi, lista1)
+
+print(list(resultado))
+
+'''
+
+# FUNÇÃO MAP COM LAMBDA
+
+'''
+
+lista1 = [1, 2, 3, 4]
+
+print(list(map(lambda x: x * 2, lista1)))
+
+'''
+
+# FUNÇÃO FILTER
+
+# Muito utilizado com listas
+# Aplica uma função para cada elemento interável, filtrando os items. (list, tuple, dic etc.)
+
+'''
+
+valores = [10, 12, 23, 32, 40]
+
+print(list(filter(lambda x: x > 20, valores)))
+
+'''
+
+# ENTENDENDO LIST COMPREHENSION COM STRINGS
+
+# Usado quando vc precisa criar uma nova lista a partir de uma existente
+# Mais simples de escrever
+# [expressão for iten in itens]
+
+'''
+
+carros1 = ['civic', 'astra', 'palio', 'lancer', 'opala']
+
+carros2 = [carro for carro in carros1 if 'o' in carro]
+
+print(carros2)
+
+'''
+
+# ENTENDENDO LIST COMPREHENSION COM NÚMEROS
+
+'''
+
+valores = [x * 10 for x in range(6)]
+
+print(valores)
+
+'''
+
+# LISTA E GENERATOR EXPRESSIONS
+
+# Uma forma mais rápido para Listas, dicionários e etc
+# Menos memória alocada
+# Valores em Bytes
+# Usamos o " () " no lugar do " [] "
+
+'''
+
+from sys import getsizeof
+
+numeros = [x * 10 for x in range(100)]
+
+print(list(numeros))
+print(type(numeros))
+print(getsizeof(numeros))
+
+print('=====')
+
+numeros = (x * 10 for x in range(100))
+
+print(list(numeros))
+print(type(numeros))
+print(getsizeof(numeros))
+
+'''
