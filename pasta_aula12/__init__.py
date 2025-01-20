@@ -1,0 +1,1 @@
+# A partir desse arquivo (__ini__.py) o Python começa a entender que a pasta (pasta_aula12) é um Package
