@@ -24,8 +24,6 @@ print(usuario1.nome)
 print(usuario1.sobrenome)
 print(usuario1.data_nascimento)
 
-# CRIANDO A SUA PRIMEIRA CLASSE     
-
 '''
 
 # CRIANDO OBJETOS DENTRO DE UMA CLASSE
