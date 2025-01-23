@@ -250,3 +250,176 @@ for numero in lista:
         print(f'O número {numero} é ímpar!')
 
 '''
+
+# Lista de Cidades (Desafio 21)
+
+'''
+
+cidades = ('São Paulo', 'Rio de Janeiro', 'Salvador')
+
+cidade_usuario = str(input('Digite uma cidade: '))
+
+if cidade_usuario in cidades:
+    print('A cidade está na lista de cidades')
+else:
+    print('A cidade não está na lista de cidades')
+    
+'''
+
+# Pesquisa de País e Capital (Desafio 22)
+
+'''
+
+capitais = {
+    'Brasil': 'Brasília',
+    'Argentina': 'Buenos Aires',
+    'Chile': 'Santiago',
+    'Australia': 'Canberra',
+    'Canada': 'Ottawa'
+}
+
+pais_usuario = str(input('Digite o nome de um país: '))
+
+if pais_usuario in capitais:
+    print(f'A capital de {pais_usuario} é {capitais[pais_usuario]}')
+else:
+    print('Desculpe, não temos informações sobre a capital desse país.')
+    
+'''
+
+# Comparação em Sets (Desafio 23)
+
+'''
+
+lista1 = {'Chiquinha', 'Pedrita', 'Jon', 'Beto', 'Vagner'}
+lista2 = {'João', 'Joaquim', 'Cris', 'Beto', 'Vagner'}
+
+resultado = lista1.intersection(lista2)
+
+print(resultado)
+
+'''
+
+# Funções Simples (Desafio 24)
+
+'''
+
+usuario_numero = int(input('Digite um número: '))
+
+resultado = usuario_numero ** 2
+
+print(f'O quadrado de {usuario_numero} é {resultado}.')
+
+'''
+
+# Soma com Funções (Desafio 25)
+
+'''
+
+def soma(num1, num2):
+    return num1 + num2
+    
+usuario_num1 = int(input('Digite o primeiro número: '))
+usuario_num2 = int(input('Digite o primeiro número: '))
+print(f'A soma dos dois números é igual a : {soma(usuario_num1, usuario_num2)}')
+
+'''
+
+# Calculando Base e Expoente (Desafio 26)
+
+'''
+
+
+def potencia(base, exponente = 2):
+    return base ** exponente
+
+base_usuario = int(input('Digite um número: '))
+exponente_usuario = (input('Digite um número: '))
+
+
+if exponente_usuario:
+    print(f'O resultado é: {potencia(base_usuario, int(exponente_usuario))}')
+else:
+    print(f'O resultado é: {potencia(base_usuario)}')
+
+'''
+
+# Calculando Fatorial (Desafio 27)
+
+'''
+
+def fatorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fatorial(n - 1)
+    
+usuario_num  = int(input('Digite um número: '))
+print(f'O fatorial de  {usuario_num} é {fatorial(usuario_num)}')
+
+
+'''
+
+# Duas Funções (Desafio 28)
+
+'''
+
+def num1(n):
+    return n * 2
+
+def num2(n):
+    return num1(n) ** 2
+
+usuario_num = int(input('Digite um número: '))
+print(f'O quadrado do dobro do número {usuario_num} é {num2(usuario_num)}')
+
+'''
+
+# Convertendo para Lambda (Desafio 29)
+
+'''
+
+cubo = lambda num: num ** 3
+usuario_num = int(input(f'Digite um número: '))
+print(f'O cubo de {usuario_num} é {cubo(usuario_num)}')
+
+'''
+
+# Lambda Multiplicando (Desafio 30)
+
+'''
+
+multi = lambda num1, num2: num1 * num2
+usuario_num1 = int(input('Digite o primeiro número: '))
+usuario_num2 = int(input('Digite o segundo número: '))
+
+print(f'A multiplicação de {usuario_num1} e {usuario_num2} é {multi(usuario_num1, usuario_num2)}')
+
+'''
+
+# Lambda com If, Else (Desafio 31)
+
+'''
+
+numero = lambda num1: ()
+usuario_numero = int(input('Digite um número: '))
+
+if usuario_numero % 2 == 0:
+    print(f'O número {usuario_numero} é Par')
+else:
+    print(f'O número {usuario_numero} é Ímpar')
+    
+'''
+
+# Lambda com For Loop (Desafio 32)
+
+'''
+
+lista_num = [1, 2, 3, 4, 5, 6]
+
+quadrado_num = lambda num: num ** 2
+
+for num in lista_num:
+    print(f'O quadrado do número {num} é {quadrado_num(num)}')
+
+'''
